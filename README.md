@@ -12,22 +12,22 @@ This API will provide detailed information about the available investment produc
 
 2. **Operation ID**: Candidate needs to implement a way to generate and propagate this operation ID between the Frontend and Backend APIs. The operation ID will be logged for each request to trace the flow of a user’s request across the two services.
 
-3.**API Security and Error Handling**: Implement a authenticated mechanism between the APIs. For instance frontend api can include a token in the request headers. Ensure the error handling when token is invalid or missing and when operation ID is not provided or if a request fails
+3. **API Security and Error Handling**: Implement a authenticated mechanism between the APIs. For instance frontend api can include a token while making the request. Ensure the proper error handling when token is invalid or missing and when operation ID is not provided or if a request fails.
 
 4. **Deployment and Logging**: Dockerize both the APIs and deploy the APIs locally or any cloud provider. Please provide the infrastructure deployment code(such as YAML files) for this. Demonstrate how logs can be traced by operation ID.
 
 5. **Documentation**: 
 - Update the Read me with clear instructions on how the frontend and backend APIs communicate with each other
-- A brief explanation of Design decisions(e.g. why specific thing is chosen etc)
-- how they are deployed and how to trace the API calls using a common identifier in the logs.
+- A brief explanation of Design decisions(e.g. why specific thing is chosen etc.)
+- How APIs are deployed and how to trace the API calls using a common identifier in the logs.
 - Brief instructions for testing and troubleshooting
 
 ### Note: Starter Python files for the APIs provided
 
 ### Logging Example:
 - FrontEnd API Log: 
-INFO:root:Operation ID: 123e4567-e89b-12d3-a456-426614174000 - User selected Stocks. Requesting details from Backend API.
+INFO:Operation ID: 123e4567-e89b-12d3-a456-426614174XXX - User selected Stocks. Requesting details from Backend API.
 - Backend API Log: 
-INFO:root:Operation ID: 123e4567-e89b-12d3-a456-426614174000 - Backend API received request for Stocks.
+INFO:Operation ID: 123e4567-e89b-12d3-a456-426614174XXX - Backend API received request for Stocks.
 
 
