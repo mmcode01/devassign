@@ -8,11 +8,11 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 
 # Available products for user to choose from
-investment_products = ['Stocks', 'Bonds', 'Mutual Funds']
+# investment_products = 'Stocks', 'Bonds', 'Mutual Funds'
 
 @app.route('/investments', methods=['GET'])
 def get_investment_options():
-      """Returns the list of available investment products."""
+      """ TODO: Returns the list of available investment products."""
      
 
       return jsonify({
@@ -23,7 +23,7 @@ def get_investment_options():
 
 @app.route('/investments/select', methods=['POST'])
 def select_investment():
-    """User selects an investment product, Frontend API retrieves details from Backend API."""
+    """TODO: User selects an investment product, Frontend API retrieves details from Backend API."""
     
 
 
