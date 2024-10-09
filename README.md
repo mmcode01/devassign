@@ -23,6 +23,7 @@ This API will provide detailed information about the available investment produc
 - Brief instructions for testing and troubleshooting
 
 ### Note: Starter Python files for the APIs provided
+Please feel free to add/modify the code as per the requirements
 
 ### Logging Example:
 - FrontEnd API Log: 
