@@ -7,15 +7,13 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 
 # Product details
-product_details = {
-    'Stocks': 'Stocks are shares of ownership in a company.',
-    'Bonds': 'Bonds are fixed-income investments representing a loan made by an investor to a borrower.',
-    'Mutual Funds': 'Mutual funds pool money from many investors to purchase securities.'
-}
+""'Stocks': 'Stocks are shares of ownership in a company.',
+'Bonds': 'Bonds are fixed-income investments representing a loan made by an investor to a borrower.',
+'Mutual Funds': 'Mutual funds pool money from many investors to purchase securities.'""
 
 @app.route('/products/<product_name>', methods=['GET'])
 def get_product_details(product_name):
-    """Returns details for the specified investment product."""
+    """TO DO: Returns details for the specified investment product."""
 
 
 
