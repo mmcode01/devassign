@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request
 import logging
 
 app = Flask(__name__)
@@ -7,8 +7,8 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 
 # Product details
-""'Stocks': 'Stocks are shares of ownership in a company.',
-'Bonds': 'Bonds are fixed-income investments representing a loan made by an investor to a borrower.',
+""'Stocks': 'Stocks are shares of a company.',
+'Bonds': 'Bonds are fixed-income investments, for example a loan made by an investor to a borrower.',
 'Mutual Funds': 'Mutual funds pool money from many investors to purchase securities.'""
 
 @app.route('/products/<product_name>', methods=['GET'])
