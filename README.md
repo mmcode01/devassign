@@ -12,7 +12,7 @@ This API will provide detailed information about the available investment produc
 
 2. **Operation ID**: Candidate needs to implement a way to generate and propagate this operation ID between the Frontend and Backend APIs. The operation ID will be logged for every request to trace the flow of a user’s request across the two services.
 
-3. **API Security and Error Handling**: Implement a authenticated mechanism between the APIs. For example, frontend api can include a token while making the request. Ensure the proper error handling when token is invalid or missing and when operation ID is not provided or if a request fails. Feel free to include all possible scenarios.
+3. **API Security and Error Handling**: Implement a authenticated mechanism between the APIs. For example, frontend api can include a token while making the request. Ensure the proper error handling when token is invalid or missing and when operation ID is not provided or if a request fails. Think of all possible scenarios.
 
 4. **Deployment and Logging**: Dockerize both the APIs and deploy the APIs locally or any cloud provider. Please provide the infrastructure deployment code(such as YAML files) for this. Demonstrate how logs can be traced by operation ID.
 
